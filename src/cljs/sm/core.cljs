@@ -72,9 +72,7 @@
     (r/mapcat (async/merge searches))))
 
 (defn subtitle-target-path [basename lang]
-  (if (= lang :plain)
-    (str basename ".srt")
-    (str basename "." lang ".srt")))
+  (str basename ".srt"))
 
 (defn in-memory-cache
   ([] (in-memory-cache (atom {})))
