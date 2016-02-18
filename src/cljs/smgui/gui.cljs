@@ -12,8 +12,6 @@
     (.createMacBuiltin mb "Subtitle Master")
     (set! (.-menu win) mb)))
 
-(setup-mac-menu)
-
 (defn open-channel
   ([] (open-channel (chan)))
   ([out] (-> nwgui
